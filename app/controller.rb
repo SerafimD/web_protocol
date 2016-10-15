@@ -1,5 +1,9 @@
 require 'cuba'
 require 'cuba/safe'
+require 'cuba/render'
+require 'erb'
+
+Cuba.plugin Cuba::Render
 
 Cuba.use Rack::Session::Cookie, :secret => "__a_very_long_string__"
 
